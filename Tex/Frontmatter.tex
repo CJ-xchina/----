@@ -1,0 +1,48 @@
+%---------------------------------------------------------------------------%
+%->> Frontmatter
+%---------------------------------------------------------------------------%
+%-
+%-> 生成封面
+%-
+
+\maketitle% 生成中文封面
+\MAKETITLE% 生成英文封面
+%-
+%-> 作者声明
+%-
+\makedeclaration% 生成声明页
+%-
+%-> 中文摘要
+%-
+\intobmk\chapter*{\texorpdfstring{摘\quad 要}{摘要}}% 显示在书签但不显示在目录
+\setcounter{page}{1}% 开始页码
+\pagenumbering{Roman}% 页码符号
+
+随着云原生技术的发展，微服务架构已成为构建大规模分布式系统的主流范式。然而，服务规模扩大、依赖关系动态演化以及故障沿调用链跨服务传播，使微服务故障根因定位面临显著挑战。尽管大语言模型的发展为智能运维提供了新的技术路径，但现有方法仍面临多源异构观测难以统一表征、诊断经验难以知识化沉淀，以及在线诊断过程难以在规范遵照与自主探索之间灵活协调等问题。
+
+针对上述问题，本文提出了一种经验驱动的微服务故障根因定位智能体方法，并构建了离线知识构建、在线诊断执行和结果回流更新的闭环框架。首先，提出传播感知的多模态故障指纹构建方法（Propagation-Aware Multimodal Fault Fingerprinting，PMF），对指标、日志和调用关系进行统一表征，并从指标形态、传播拓扑、时序关联、日志语义和跨模态耦合等方面提取特征，生成面向相似故障检索的故障指纹。其次，提出面向微服务故障诊断的标准操作规程（Standard Operating Procedure，SOP）自动化构建方法，通过生成先验引导的SOP执行轨迹、提取并加权决策单元，最终完成规则化组织的三阶段流程，将零散诊断经验转化为可执行、可复用且可增量更新的SOP。最后，提出SOP驱动的多智能体在线故障诊断方法，利用故障指纹召回相似案例及其绑定的SOP，在焦点与感知域约束下协同收集多模态证据；当既有SOP无法覆盖当前场景时，引入逃逸探索机制补全诊断路径，人工复核后将诊断结果回流至知识库以支持持续演化。基于上述框架，本文实现了故障诊断智能体平台，支撑离线运维知识构建与在线故障诊断的一体化运行。
+
+本文在 AIOps-25、Bank 和 Market 三个公开数据集上进行了实验验证。结果表明，PMF 在三个数据集上的 Hit@1 分别达到 53.26\%、49.95\% 和 46.79\%，能够在故障组色与故障类型的粒度上稳定召回相似历史案例。SOP 自动化构建实验进一步表明，随着增量更新推进，平均逃逸率可降至 15.2\%，诊断成功率提升至 79.0\%，任务完成率始终保持在 94\% 以上。端到端根因定位实验显示，本文方法在三个数据集上的 Hit@1 分别达到 58.03\%、54.15\% 和 49.61\%，相较于现有大语言模型智能体根因定位方法，Hit@1 取得了 10.50 至 12.30 个百分点的稳定提升。实验结果验证了方法在相似故障检索、诊断知识构建与在线根因定位方面的有效性与实用性。
+
+
+
+
+\keywords{微服务，根因定位，大语言模型，智能体}% 中文关键词
+%-
+%-> 英文摘要
+%-
+\intobmk\chapter*{Abstract}% 显示在书签但不显示在目录
+
+With the rapid development of cloud-native technologies, the microservice architecture has become the mainstream paradigm for building large-scale distributed systems. However, as service scale continues to grow, dependency relationships evolve dynamically, and failures propagate across services along invocation chains, root cause localization in microservices faces significant challenges. Although the advancement of large language models has opened up new opportunities for intelligent operations and maintenance, existing approaches still suffer from several limitations, including the difficulty of unified representation for multi-source heterogeneous observations, the lack of effective knowledge accumulation from diagnostic experience, and the inability of online diagnosis to flexibly balance compliance with standardized procedures and autonomous exploration.
+
+To address these issues, this paper proposes an experience-driven intelligent agent method for root cause localization in microservice systems and constructs a closed-loop framework integrating offline knowledge construction, online diagnostic execution, and result feedback updates. First, a propagation-aware multimodal fault fingerprinting method (Propagation-Aware Multimodal Fault Fingerprinting, PMF) is proposed to provide a unified representation of metrics, logs, and invocation relationships. It extracts features from metric patterns, propagation topology, temporal correlations, log semantics, and cross-modal coupling to generate fault fingerprints for similar-fault retrieval. Second, an automated construction method for Standard Operating Procedures (SOPs) for microservice fault diagnosis is proposed. By generating prior-guided SOP execution trajectories, extracting and weighting decision units, and organizing them into a rule-based three-stage workflow, this method transforms scattered diagnostic experience into executable, reusable, and incrementally updatable SOPs. Finally, an SOP-driven multi-agent online fault diagnosis method is proposed. It retrieves similar historical cases and their associated SOPs through fault fingerprints, and collaboratively collects multimodal evidence under the constraints of focus and perception domains. When existing SOPs cannot fully cover the current scenario, an escape exploration mechanism is introduced to supplement the diagnostic path. After human review, the diagnosis results are fed back into the knowledge base to support continuous evolution. Based on this framework, an intelligent fault diagnosis agent platform is implemented to support the integrated operation of offline O\&M knowledge construction and online fault diagnosis.
+
+Experiments are conducted on three public datasets, namely AIOps-25, Bank, and Market. The results show that PMF achieves Hit@1 scores of 53.26\%, 49.95\%, and 46.79\% on the three datasets, respectively, demonstrating stable retrieval of similar historical cases at the granularity of both fault groups and fault types. Further experiments on automated SOP construction show that, with incremental updates, the average escape rate can be reduced to 15.2\%, the diagnostic success rate can be improved to 79.0\%, and the task completion rate remains above 94\% throughout. End-to-end root cause localization experiments further demonstrate that the proposed method achieves Hit@1 scores of 58.03\%, 54.15\%, and 49.61\% on the three datasets, respectively. Compared with existing large-language-model-based agent methods for root cause localization, the proposed method yields a consistent improvement of 10.50 to 12.30 percentage points in Hit@1. These results verify the effectiveness and practical utility of the proposed approach in similar fault retrieval, diagnostic knowledge construction, and online root cause localization.
+
+
+\KEYWORDS{Microservice, Root Cause Localization, Large Language Model, AI Agent}
+
+\pagestyle{enfrontmatterstyle}%
+\cleardoublepage\pagestyle{frontmatterstyle}%
+
+%---------------------------------------------------------------------------%

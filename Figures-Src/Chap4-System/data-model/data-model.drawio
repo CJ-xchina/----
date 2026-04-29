@@ -1,0 +1,190 @@
+<mxfile host="65bd71144e">
+    <diagram id="GZKpKl3uw--RmmW9NEcl" name="第 1 页">
+        <mxGraphModel dx="782" dy="696" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="750" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="故障诊断智能体平台数据模型" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#1a1a2e;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="10" width="350" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="dataset" value="数据集 (Dataset)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#E3F2FD;strokeColor=#42A5F5;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="60" width="180" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="dataset_pk" value="PK id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1;fontFamily=Noto Sans SC;" parent="dataset" vertex="1">
+                    <mxGeometry y="26" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="dataset_name" value="name: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="dataset" vertex="1">
+                    <mxGeometry y="48" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="dataset_desc" value="description: Text" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="dataset" vertex="1">
+                    <mxGeometry y="70" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="dataset_created" value="created_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="dataset" vertex="1">
+                    <mxGeometry y="92" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="scenario" value="故障实例 (Instance)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#E3F2FD;strokeColor=#42A5F5;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="220" width="180" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="scenario_pk" value="PK id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1;fontFamily=Noto Sans SC;" parent="scenario" vertex="1">
+                    <mxGeometry y="26" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="scenario_fk" value="FK dataset_id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2;fontFamily=Noto Sans SC;" parent="scenario" vertex="1">
+                    <mxGeometry y="48" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="scenario_name" value="name: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="scenario" vertex="1">
+                    <mxGeometry y="70" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="scenario_fault" value="fault_type: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="scenario" vertex="1">
+                    <mxGeometry y="92" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="scenario_topo" value="topology: JSON" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="scenario" vertex="1">
+                    <mxGeometry y="114" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="scenario_time" value="time_range: JSON" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="scenario" vertex="1">
+                    <mxGeometry y="136" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="scenario_created" value="created_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="scenario" vertex="1">
+                    <mxGeometry y="158" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="sop" value="SOP知识库" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#E8F5E9;strokeColor=#66BB6A;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="780" y="60" width="180" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="sop_pk" value="PK id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1;fontFamily=Noto Sans SC;" parent="sop" vertex="1">
+                    <mxGeometry y="26" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="sop_name" value="name: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="sop" vertex="1">
+                    <mxGeometry y="48" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="sop_version" value="version: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="sop" vertex="1">
+                    <mxGeometry y="70" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="sop_nodes" value="nodes: JSON" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="sop" vertex="1">
+                    <mxGeometry y="92" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="sop_edges" value="edges: JSON" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="sop" vertex="1">
+                    <mxGeometry y="114" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="sop_created" value="created_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="sop" vertex="1">
+                    <mxGeometry y="136" width="180" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="workspace" value="工作区 (Workspace)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#FFF3E0;strokeColor=#FFA726;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="60" width="200" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="workspace_pk" value="PK id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1;fontFamily=Noto Sans SC;" parent="workspace" vertex="1">
+                    <mxGeometry y="26" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="workspace_name" value="name: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="workspace" vertex="1">
+                    <mxGeometry y="48" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="workspace_fk_dataset" value="FK dataset_id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2;fontFamily=Noto Sans SC;" parent="workspace" vertex="1">
+                    <mxGeometry y="70" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="workspace_fk_scenario" value="FK scenario_id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2;fontFamily=Noto Sans SC;" parent="workspace" vertex="1">
+                    <mxGeometry y="92" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="workspace_fk_sop" value="FK sop_id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2;fontFamily=Noto Sans SC;" parent="workspace" vertex="1">
+                    <mxGeometry y="114" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="workspace_status" value="status: Enum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="workspace" vertex="1">
+                    <mxGeometry y="136" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="workspace_created" value="created_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="workspace" vertex="1">
+                    <mxGeometry y="158" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="agent" value="任务代理 (Agent)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#F3E5F5;strokeColor=#AB47BC;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="280" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="agent_pk" value="PK id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1;fontFamily=Noto Sans SC;" parent="agent" vertex="1">
+                    <mxGeometry y="26" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="agent_fk_workspace" value="FK workspace_id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2;fontFamily=Noto Sans SC;" parent="agent" vertex="1">
+                    <mxGeometry y="48" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="agent_type" value="agent_type: Enum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="agent" vertex="1">
+                    <mxGeometry y="70" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="agent_status" value="status: Enum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="agent" vertex="1">
+                    <mxGeometry y="92" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="agent_result" value="result: JSON" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="agent" vertex="1">
+                    <mxGeometry y="114" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="agent_state" value="state: JSON" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="agent" vertex="1">
+                    <mxGeometry y="136" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="agent_error" value="error_json: JSON" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="agent" vertex="1">
+                    <mxGeometry y="158" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="agent_created" value="created_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="agent" vertex="1">
+                    <mxGeometry y="180" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="mining" value="挖掘任务 (MiningTask)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=#FFEBEE;strokeColor=#EF5350;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="760" y="303" width="200" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="mining_pk" value="PK id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1;fontFamily=Noto Sans SC;" parent="mining" vertex="1">
+                    <mxGeometry y="26" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="mining_fk_workspace" value="FK workspace_id: UUID" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2;fontFamily=Noto Sans SC;" parent="mining" vertex="1">
+                    <mxGeometry y="48" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="mining_input" value="input_agent_ids: JSON" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="mining" vertex="1">
+                    <mxGeometry y="70" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="mining_phase" value="current_phase: Int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="mining" vertex="1">
+                    <mxGeometry y="92" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="mining_status" value="status: Enum" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="mining" vertex="1">
+                    <mxGeometry y="114" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="mining_created" value="created_at: DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontFamily=Noto Sans SC;" parent="mining" vertex="1">
+                    <mxGeometry y="136" width="200" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel1" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#42A5F5;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontFamily=Noto Sans SC;" parent="1" source="dataset" target="scenario" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel1_label" value="1:N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="140" y="185" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel2" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#FFA726;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontFamily=Noto Sans SC;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="120" as="sourcePoint"/>
+                        <mxPoint x="400" y="120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel2_label" value="1:1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="100" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel3" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#FFA726;exitX=1;exitY=0.5;entryX=0;entryY=0.75;fontFamily=Noto Sans SC;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="220" y="310" as="sourcePoint"/>
+                        <mxPoint x="400" y="195" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel3_label" value="1:1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="250" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel4" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#66BB6A;exitX=0;exitY=0.5;entryX=1;entryY=0.5;fontFamily=Noto Sans SC;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="780" y="140" as="sourcePoint"/>
+                        <mxPoint x="600" y="140" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="rel4_label" value="1:1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="670" y="120" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel5" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#AB47BC;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontFamily=Noto Sans SC;" parent="1" source="workspace" target="agent" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel5_label" value="1:N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="505" y="245" width="30" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel6" value="" style="endArrow=classic;html=1;strokeWidth=1.5;strokeColor=#EF5350;exitX=1;exitY=0.5;entryX=0;entryY=0.5;fontFamily=Noto Sans SC;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" parent="1" source="agent_status" target="mining_input" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="rel6_label" value="1:N" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=1;fontFamily=Noto Sans SC;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="355" width="30" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

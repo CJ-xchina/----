@@ -1,0 +1,18 @@
+% 数据集多模态异常占比统计（基于无监督异常检测）
+\begin{table}[htbp]
+\centering
+\caption{数据集多模态异常占比统计}
+\label{tab:anomaly_ratio_detected}
+\small
+\begin{tabular}{lcccc}
+\toprule
+\textbf{数据集} & \textbf{Metrics异常占比} & \textbf{Logs异常占比} & \textbf{Traces异常占比} & \textbf{平均异常占比} \\
+\midrule
+AIOps-25 & 2.94\% & 0.00\% & 4.94\% & 2.62\% \\
+Bank     & 3.12\% & 0.00\% & 4.87\% & 2.66\% \\
+Market   & 3.28\% & 0.00\% & 5.15\% & 2.81\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{注}：异常占比通过无监督异常检测方法计算。对于Metrics和Traces数据，采用Isolation Forest算法\cite{liu2008isolation}（contamination=5\%）识别偏离正常分布的异常数据点；对于Logs数据，统计ERROR/WARN/FATAL级别的日志占比。三个数据集的Logs异常占比均为0\%，表明数据集中所有日志均为INFO级别，未包含错误级别日志。Metrics和Traces的异常占比在3-5\%之间，符合Isolation Forest的contamination参数设置，反映了故障注入后受影响的数据点比例。该统计基于每个数据集30个故障事件的采样分析。

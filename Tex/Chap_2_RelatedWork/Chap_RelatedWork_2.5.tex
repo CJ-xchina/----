@@ -1,0 +1,66 @@
+%---------------------------------------------------------------------------%
+%->> Section 2.5: 本章小结
+%---------------------------------------------------------------------------%
+
+\section{本章小结}
+
+本章回顾了微服务故障诊断的基础概念，并梳理了传统方法与大语言模型的方法。表\ref{tab:methods-comparison}比较了各类方法的主要做法和局限。
+
+\begin{table}[H]
+\centering
+\bicaption{\enspace 微服务故障诊断方法及其局限}{\enspace Microservice Fault Diagnosis Methods and Their Limitations}
+\label{tab:methods-comparison}
+\renewcommand{\arraystretch}{1.3}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{2.3cm}>{\centering\arraybackslash}p{2.1cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+\rowcolor{lightgray!30}
+\textbf{类别} & \textbf{子类别} & \textbf{主要做法} & \textbf{主要局限} \\
+\midrule
+\textbf{传统方法} & 因果推断 & 根据依赖图或因果图追踪异常传播并回溯根因 & 依赖图质量与先验假设，动态适应能力有限 \\
+\cline{2-4}
+& 特征学习 & 从指标、日志和调用链路中学习表示，用于定位或排序 & 依赖训练数据，泛化与可解释性受限 \\
+\midrule
+\textbf{大语言模型的方法} & 大语言模型离线分析 & 把整理后的告警、日志或工单交给大语言模型生成解释与建议 & 依赖预先整理输入，缺乏在线补证能力 \\
+\cline{2-4}
+& 工具增强的单智能体 & 通过工具调用主动收集证据并在线推理 & 长链路交互下稳定性与效率受限 \\
+\cline{2-4}
+& 多智能体协同诊断 & 将检索、分析和结论生成分给不同角色协作完成 & 协作开销较高，流程控制困难 \\
+\cline{2-4}
+& 知识增强的多智能体协同诊断 & 将 SOP、TSG 或规则库纳入诊断流程，限制推理与执行范围 & 知识获取与更新成本高，对覆盖范围依赖较强 \\
+\bottomrule
+\end{tabularx}
+\setlength{\tabcolsep}{6pt}
+
+\end{table}
+
+表\ref{tab:related-work-comparison}进一步从知识来源、知识形式、在线诊断、知识更新和 SOP 未覆盖时的处理五个方面，对 LLexus、Flow-of-Action、FastReject 和本文进行比较。
+
+\begin{table}[H]
+\centering
+\bicaption{\enspace 本文工作与 LLexus、Flow-of-Action 和 FastReject 的对比}{\enspace Comparison Between This Work, LLexus, Flow-of-Action, and FastReject}
+\label{tab:related-work-comparison}
+\renewcommand{\arraystretch}{1.3}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+\rowcolor{lightgray!30}
+\textbf{比较项} & \textbf{LLexus} & \textbf{Flow-of-Action} & \textbf{FastReject} & \textbf{本文工作} \\
+\midrule
+知识来源 & 人工编写的 TSG & 既有 SOP 文档 & 人工定位结果与经验规则 & \textbf{故障注入生成的 SOP执行轨迹与复核后的在线案例} \\
+知识表示 & 可执行计划 & SOP 流程 & 规则库与 SOP 校验路径 & \textbf{可执行 SOP（与故障指纹绑定）} \\
+知识更新 & 人工维护 & 未强调持续更新 & 根据人工真值更新规则库 & \textbf{自动构建并增量更新} \\
+在线诊断 & 按计划执行 & 在 SOP 约束下由多智能体执行 & 推理结果再经规则与 SOP 复核 & \textbf{由 SOP 驱动在线诊断} \\
+诊断规程遵照 & 依赖既有 TSG & 主要受 SOP 覆盖范围限制 & 规则外推能力有限 & \textbf{逃逸机制支持继续排查} \\
+\bottomrule
+\end{tabularx}
+\setlength{\tabcolsep}{6pt}
+\end{table}
+
+传统方法主要沿因果推断和特征学习两条路线展开。前者依赖显式传播结构，后者依赖从多模态观测中学习的判别表示，但两类方法都较少把历史经验沉淀为可直接复用的诊断流程，导致知识难以在不同故障场景间迁移。
+
+大语言模型的方法则经历了从离线分析到在线交互、再到知识约束的演进。大语言模型离线分析提升了对既有材料的归纳能力，但在证据不足时缺乏主动补证能力；工具增强的单智能体开始通过工具调用直接获取日志、指标和链路信息，但在长链路任务中容易出现上下文过载。多智能体协同诊断通过角色分工缓解单体压力，却带来更高的协作与控制成本。知识增强的方法将 SOP、TSG 和规则库纳入执行过程，稳定性有所改善，但知识获取与更新仍然依赖人工，难以适应快速变化的故障模式。
+
+综合来看，现有研究虽然已经覆盖故障分析、工具调用和知识约束，但仍较少把故障表征、SOP 构建和在线诊断组织成一套能够持续更新的方法，缺乏从诊断过程中自动提取和演化知识的机制。这正是第三章要解决的问题。

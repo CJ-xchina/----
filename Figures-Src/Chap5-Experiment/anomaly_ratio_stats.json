@@ -1,0 +1,26 @@
+{
+  "AIOps-25": {
+    "metrics_ratio": 33.79158659646528,
+    "logs_ratio": 30.737996933436946,
+    "traces_ratio": 30.043832369136002,
+    "avg_ratio": 31.524471966346074,
+    "processed": 400,
+    "total": 400
+  },
+  "Bank": {
+    "metrics_ratio": 2.283755034204528,
+    "logs_ratio": 2.2845661764705882,
+    "traces_ratio": 0.0,
+    "avg_ratio": 1.5227737368917051,
+    "processed": 136,
+    "total": 136
+  },
+  "Market": {
+    "metrics_ratio": 1.8801938311884911,
+    "logs_ratio": 1.7895641891891891,
+    "traces_ratio": 1.4902094594594595,
+    "avg_ratio": 1.7199891599457133,
+    "processed": 148,
+    "total": 148
+  }
+}

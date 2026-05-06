@@ -427,12 +427,12 @@
         \setCJKsansfont{SimHei}[AutoFakeBold=2.5]%
         \setCJKmonofont{FangSong}%
     \else\ifartx@mac%
-        \setCJKmainfont{FandolSong}[%
-            BoldFont       = FandolSong-Bold,
-            ItalicFont     = FandolKai,
+        \setCJKmainfont{FandolSong-Regular.otf}[%
+            BoldFont       = FandolSong-Bold.otf,
+            ItalicFont     = FandolKai-Regular.otf,
         ]
-        \setCJKsansfont{FandolHei}[BoldFont = FandolHei-Bold]%
-        \setCJKmonofont{FandolFang}%
+        \setCJKsansfont{FandolHei-Regular.otf}[BoldFont = FandolHei-Bold.otf]%
+        \setCJKmonofont{FandolFang-Regular.otf}%
     \else\ifartx@adobe% call font from system font library
         \setCJKmainfont{AdobeSongStd-Light}[%
             AutoFakeBold=2.5,
@@ -451,12 +451,12 @@
     %- With path: fontspec will treat the given string as font filename and use kpathsea to
     %- search the font filename in path, and extension is optional but recommended in this case
     %- Use macOS system fonts
-        \setCJKmainfont{FandolSong}[%
-            BoldFont       = FandolSong-Bold,
-            ItalicFont     = FandolKai,
+        \setCJKmainfont{FandolSong-Regular.otf}[%
+            BoldFont       = FandolSong-Bold.otf,
+            ItalicFont     = FandolKai-Regular.otf,
         ]
-        \setCJKsansfont{FandolHei}[BoldFont = FandolHei-Bold]%
-        \setCJKmonofont{FandolFang}%
+        \setCJKsansfont{FandolHei-Regular.otf}[BoldFont = FandolHei-Bold.otf]%
+        \setCJKmonofont{FandolFang-Regular.otf}%
     \fi\fi\fi\fi
 \fi
 %-

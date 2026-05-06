@@ -1,0 +1,35 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1-1}{\ignorespaces \enspace 微服务故障诊断多模态数据示意}}{1}{figure.caption.12}%
+\contentsline {figure}{\numberline {1-2}{\ignorespaces \enspace 本文研究工作的整体关系}}{5}{figure.caption.13}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2-1}{\ignorespaces \enspace 智能体系统的典型组成（改绘自Weng~\cite {weng2023agent}）}}{9}{figure.caption.14}%
+\contentsline {figure}{\numberline {2-2}{\ignorespaces \enspace LLexus 中的 TSG 片段示例\cite {lascasas2024llexus}}}{14}{figure.caption.19}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3-1}{\ignorespaces 经验驱动的微服务故障根因定位智能体流程}}{18}{figure.caption.22}%
+\contentsline {figure}{\numberline {3-2}{\ignorespaces \enspace 传播感知的多模态故障指纹构建流程}}{20}{figure.caption.23}%
+\contentsline {figure}{\numberline {3-3}{\ignorespaces \enspace Drain日志模板解析与模板归并}}{22}{figure.caption.24}%
+\contentsline {figure}{\numberline {3-4}{\ignorespaces \enspace 由故障实例直接生成SOP的示意}}{27}{figure.caption.25}%
+\contentsline {figure}{\numberline {3-5}{\ignorespaces \enspace 参照执行轨迹构建SOP的示意}}{28}{figure.caption.26}%
+\contentsline {figure}{\numberline {3-6}{\ignorespaces \enspace 连接等待显著升高场景的SOP有向无环图示例}}{29}{figure.caption.27}%
+\contentsline {figure}{\numberline {3-7}{\ignorespaces \enspace 探索智能体与观察智能体的协作流程}}{33}{figure.caption.29}%
+\contentsline {figure}{\numberline {3-8}{\ignorespaces \enspace 探索智能体与观察智能体的协同示例}}{34}{figure.caption.30}%
+\contentsline {figure}{\numberline {3-9}{\ignorespaces \enspace 执行轨迹构建SOP的示意}}{39}{figure.caption.35}%
+\contentsline {figure}{\numberline {3-10}{\ignorespaces \enspace SOP驱动的多智能体在线故障诊断总览}}{41}{figure.caption.37}%
+\contentsline {figure}{\numberline {3-11}{\ignorespaces \enspace 故障指纹聚类、SOP绑定与在线召回}}{42}{figure.caption.38}%
+\contentsline {figure}{\numberline {3-12}{\ignorespaces \enspace 焦点迁移与感知域变化示意}}{43}{figure.caption.39}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4-1}{\ignorespaces 基于 OpenCode 的微服务故障诊断平台架构}}{48}{figure.caption.41}%
+\contentsline {figure}{\numberline {4-2}{\ignorespaces \enspace 工作区、任务与SOP的数据关系}}{52}{figure.caption.43}%
+\contentsline {figure}{\numberline {4-3}{\ignorespaces \enspace 在线诊断任务执行时序}}{53}{figure.caption.44}%
+\contentsline {figure}{\numberline {4-4}{\ignorespaces \enspace 诊断执行界面：左侧为 Agent 诊断日志与任务进度，右侧为 SOP 节点图}}{54}{figure.caption.45}%
+\contentsline {figure}{\numberline {4-5}{\ignorespaces \enspace 工作区中的案例信息与任务看板}}{55}{figure.caption.46}%
+\contentsline {figure}{\numberline {4-6}{\ignorespaces \enspace 三维嵌入空间中的故障指纹聚类分布}}{56}{figure.caption.47}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5-1}{\ignorespaces \enspace 三个数据集的故障类型分布对比}}{61}{figure.caption.50}%
+\contentsline {figure}{\numberline {5-2}{\ignorespaces \enspace 故障指纹检索任务 MRR 对比}}{63}{figure.caption.54}%
+\contentsline {figure}{\numberline {5-3}{\ignorespaces \enspace 跨聚类簇平均的 SOP 构建迭代指标与结构变化}}{65}{figure.caption.56}%
+\contentsline {figure}{\numberline {5-4}{\ignorespaces \enspace 端到端诊断任务 MRR 对比}}{69}{figure.caption.58}%
+\contentsline {figure}{\numberline {5-5}{\ignorespaces \enspace 诊断耗时阶段分解}}{71}{figure.caption.60}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

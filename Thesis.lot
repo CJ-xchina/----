@@ -1,0 +1,23 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2-1}{\ignorespaces \enspace 微服务故障诊断方法及其局限}}{15}{table.caption.20}%
+\contentsline {table}{\numberline {2-2}{\ignorespaces \enspace 本文工作与 LLexus、Flow-of-Action 和 FastReject 的对比}}{15}{table.caption.21}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3-1}{\ignorespaces \enspace 探索智能体与观察智能体的工具体系}}{32}{table.caption.28}%
+\contentsline {table}{\numberline {3-2}{\ignorespaces \enspace 规则智能体的 SOP 组织工具}}{40}{table.caption.36}%
+\contentsline {table}{\numberline {3-3}{\ignorespaces \enspace 离线探索智能体与在线诊断智能体的角色差异}}{44}{table.caption.40}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4-1}{\ignorespaces \enspace 第三章方法与平台实现的对应关系}}{49}{table.caption.42}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5-1}{\ignorespaces \enspace 实验环境配置}}{60}{table.caption.48}%
+\contentsline {table}{\numberline {5-2}{\ignorespaces \enspace 实验数据集基本信息}}{60}{table.caption.49}%
+\contentsline {table}{\numberline {5-3}{\ignorespaces \enspace 实验任务与评估指标对应关系}}{61}{table.caption.51}%
+\contentsline {table}{\numberline {5-4}{\ignorespaces \enspace 数据集多模态异常占比统计}}{62}{table.caption.52}%
+\contentsline {table}{\numberline {5-5}{\ignorespaces \enspace 故障指纹检索性能对比}}{62}{table.caption.53}%
+\contentsline {table}{\numberline {5-6}{\ignorespaces \enspace SOP 构建实验的故障指纹聚类统计}}{64}{table.caption.55}%
+\contentsline {table}{\numberline {5-7}{\ignorespaces \enspace 端到端诊断性能对比}}{68}{table.caption.57}%
+\contentsline {table}{\numberline {5-8}{\ignorespaces \enspace 端到端诊断开销统计}}{70}{table.caption.59}%
+\contentsline {table}{\numberline {5-9}{\ignorespaces \enspace 消融实验结果（AIOps-25 数据集）}}{72}{table.caption.61}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

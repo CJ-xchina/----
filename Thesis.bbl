@@ -1,0 +1,709 @@
+\begin{thebibliography}{98}
+\providecommand{\biband}{和}
+\providecommand{\bibetal}{等}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[Weng(2023)]{weng2023agent}
+Weng~L.
+\newblock Llm powered autonomous agents [EB/OL].
+\newblock \allowbreak(2023-06-23)\allowbreak[2024-06-04].
+\newblock \url{https://lilianweng.github.io/posts/2023-06-23-agent/}.
+
+\bibitem[Las-Casas {\bibetal}(2024)Las-Casas, Kumbhare, Fonseca, and
+  Agarwal]{lascasas2024llexus}
+Las-Casas~P, Kumbhare~A~G, Fonseca~R, et~al.
+\newblock Llexus: an ai agent system for incident management [J/OL].
+\newblock ACM SIGOPS Operating Systems Review, 2024, 58\penalty0 (1): 23-36.
+\newblock DOI: \doi{10.1145/3689051.3689056}.
+
+\bibitem[Newman(2021)]{microservice-architecture}
+Newman~S.
+\newblock Building microservices: Designing fine-grained systems [M/OL].
+\newblock 2nd ed.
+\newblock O'Reilly Media, 2021\allowbreak[2026-03-12].
+\newblock
+  \url{https://www.oreilly.com/library/view/building-microservices-2nd/9781492034018/}.
+
+\bibitem[Richardson(2018)]{richardson2018microservices}
+Richardson~C.
+\newblock Microservices patterns: With examples in java [M].
+\newblock Manning Publications, 2018.
+
+\bibitem[{The Kubernetes Authors}(2026)]{kubernetes2024}
+{The Kubernetes Authors}.
+\newblock Kubernetes documentation [EB/OL].
+\newblock 2026\allowbreak[2026-03-12].
+\newblock \url{https://kubernetes.io/docs/}.
+
+\bibitem[Zhang {\bibetal}(2026)Zhang, Xia, Fan, Shi, Xiong, Zhong, Ma, Sun, and
+  Pei]{microservice-diagnosis-survey}
+Zhang~S, Xia~S, Fan~W, et~al.
+\newblock Failure diagnosis in microservice systems: A comprehensive survey and
+  analysis [J/OL].
+\newblock ACM Transactions on Software Engineering and Methodology, 2026,
+  35\penalty0 (1): 1-55.
+\newblock \url{https://doi.org/10.1145/3715005}.
+
+\bibitem[Sridharan(2018)]{sridharan2018distributed}
+Sridharan~C.
+\newblock Distributed systems observability: A guide to building robust systems
+  [M].
+\newblock O'Reilly Media, 2018.
+
+\bibitem[{OpenTelemetry Authors}(2026)]{opentelemetry2024}
+{OpenTelemetry Authors}.
+\newblock What is opentelemetry? [EB/OL].
+\newblock 2026\allowbreak[2026-03-12].
+\newblock \url{https://opentelemetry.io/docs/what-is-opentelemetry/}.
+
+\bibitem[贾统\ {\bibetal}(2020)贾统, 李影, and
+  吴中海]{jia2020logdiagnosissurvey}
+贾统, 李影, 吴中海.
+\newblock 基于日志数据的分布式软件系统故障诊断综述 [J/OL].
+\newblock 软件学报, 2020, 31\penalty0 (7):
+  1997-2018\allowbreak[2026-03-18].
+\newblock \url{http://www.jos.org.cn/jos/article/abstract/6045}.
+\newblock DOI: \doi{10.13328/j.cnki.jos.006045}.
+
+\bibitem[黄梓程\ {\bibetal}(2023)黄梓程, 陈鹏飞, 余广坝, and
+  陈泓仰]{huang2023tracepp}
+黄梓程, 陈鹏飞, 余广坝, 等.
+\newblock 面向Java微服务系统的透明请求追踪及采样方法 [J/OL].
+\newblock 软件学报, 2023, 34\penalty0 (7):
+  3167-3187\allowbreak[2026-03-18].
+\newblock \url{http://www.jos.org.cn/jos/article/abstract/6523}.
+\newblock DOI: \doi{10.13328/j.cnki.jos.006523}.
+
+\bibitem[{Prometheus Authors}(2026)]{prometheus2024}
+{Prometheus Authors}.
+\newblock Prometheus - monitoring system \& time series database [EB/OL].
+\newblock 2026\allowbreak[2026-03-12].
+\newblock \url{https://prometheus.io/}.
+
+\bibitem[{Jaeger Authors}(2026)]{jaeger2024}
+{Jaeger Authors}.
+\newblock Jaeger [EB/OL].
+\newblock 2026\allowbreak[2026-03-12].
+\newblock \url{https://www.jaegertracing.io/}.
+
+\bibitem[{Elastic}(2026)]{elasticsearch2024}
+{Elastic}.
+\newblock Elasticsearch: The official distributed search \& analytics engine
+  [EB/OL].
+\newblock 2026\allowbreak[2026-03-12].
+\newblock \url{https://www.elastic.co/elasticsearch/}.
+
+\bibitem[包航宇\ {\bibetal}(2023)包航宇, 曹立, 李世宁, 孙永敬,
+  尹汇锋, 汤汝鸣, 侯岳, 王士强, 裴丹, 杨晓勤, and
+  王立新]{bao2023aiopsstandard}
+包航宇, 曹立, 李世宁, 等.
+\newblock 智能运维的实践: 现状与标准化 [J/OL].
+\newblock 软件学报, 2023, 34\penalty0 (9):
+  4069-4095\allowbreak[2026-03-18].
+\newblock \url{http://www.jos.org.cn/jos/article/abstract/6876}.
+\newblock DOI: \doi{10.13328/j.cnki.jos.006876}.
+
+\bibitem[Brown {\bibetal}(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
+  Neelakantan, Shyam, Sastry, Askell, Agarwal, Herbert-Voss, Krueger, Henighan,
+  Rewey, and Sutskever]{brown2020language}
+Brown~T~B, Mann~B, Ryder~N, et~al.
+\newblock Language models are few-shot learners [C]//\allowbreak
+Advances in Neural Information Processing Systems (NeurIPS): volume~33.
+\newblock 2020: 1877-1901.
+
+\bibitem[Wei {\bibetal}(2022)Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi,
+  Le, and Zhou]{wei2022chain}
+Wei~J, Wang~X, Schuurmans~D, et~al.
+\newblock Chain-of-thought prompting elicits reasoning in large language models
+  [J].
+\newblock Advances in Neural Information Processing Systems, 2022, 35:
+  24824-24837.
+
+\bibitem[Yao {\bibetal}(2023)Yao, Zhao, Yu, Du, Shafran, Narasimhan, and
+  Cao]{yao2022react}
+Yao~S, Zhao~J, Yu~D, et~al.
+\newblock React: Synergizing reasoning and acting in language models
+  [C/OL]//\allowbreak
+The Eleventh International Conference on Learning Representations.
+\newblock 2023.
+\newblock \url{https://openreview.net/forum?id=WE_vluYUL-X}.
+
+\bibitem[Wang {\bibetal}(2024)Wang, Liu, Zhang, Zhong, Wang, Yin, Fan, Wu, and
+  Wen]{wang2024rcagent}
+Wang~Z, Liu~Z, Zhang~Y, et~al.
+\newblock Rcagent: Cloud root cause analysis by autonomous agents with
+  tool-augmented large language models [C/OL]//\allowbreak
+Proceedings of the 33rd ACM International Conference on Information and
+  Knowledge Management (CIKM '24).
+\newblock ACM, 2024: 4966-4974.
+\newblock \url{https://doi.org/10.1145/3627673.3680016}.
+
+\bibitem[Vaswani {\bibetal}(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones,
+  Gomez, Kaiser, and Polosukhin]{vaswani2017attention}
+Vaswani~A, Shazeer~N, Parmar~N, et~al.
+\newblock Attention is all you need [C]//\allowbreak
+Advances in Neural Information Processing Systems (NeurIPS): volume~30.
+\newblock 2017: 5998-6008.
+
+\bibitem[{OpenAI}(2023)]{openai2023gpt4}
+{OpenAI}.
+\newblock Gpt-4 technical report [J].
+\newblock arXiv preprint arXiv:2303.08774, 2023.
+
+\bibitem[Bai {\bibetal}(2023)Bai et~al.]{qwen2023technical}
+Bai~J, et~al.
+\newblock Qwen technical report [J].
+\newblock arXiv preprint arXiv:2309.16609, 2023.
+
+\bibitem[Hong {\bibetal}(2023)Hong, Zhuge, Chen, Zheng, Cheng, Zhang, Wang,
+  Wang, Yau, Lin, Zhou, Ran, Xiao, Wu, and Schmidhuber]{hong2023metagpt}
+Hong~S, Zhuge~M, Chen~J, et~al.
+\newblock Metagpt: Meta programming for a multi-agent collaborative framework
+  [J].
+\newblock arXiv preprint arXiv:2308.00352, 2023.
+
+\bibitem[{LangChain Team}(2024{\natexlab{a}})]{langchain}
+{LangChain Team}.
+\newblock Langchain documentation [EB/OL].
+\newblock 2024.
+\newblock \url{https://www.langchain.com/}.
+
+\bibitem[{LangChain Team}(2024{\natexlab{b}})]{langgraph}
+{LangChain Team}.
+\newblock Langgraph documentation [EB/OL].
+\newblock 2024.
+\newblock \url{https://www.langchain.com/langgraph}.
+
+\bibitem[{Dify Team}(2024)]{dify}
+{Dify Team}.
+\newblock Dify: Open-source llm app development platform [EB/OL].
+\newblock 2024.
+\newblock \url{https://dify.ai/}.
+
+\bibitem[{GitHub}(2024)]{copilot2024}
+{GitHub}.
+\newblock Github copilot: Your ai pair programmer [EB/OL].
+\newblock 2024.
+\newblock \url{https://github.com/features/copilot}.
+
+\bibitem[{Anysphere Inc.}(2024)]{cursor2024}
+{Anysphere Inc.}
+\newblock Cursor: The ai code editor [EB/OL].
+\newblock 2024.
+\newblock \url{https://cursor.sh/}.
+
+\bibitem[{OpenAI}(2025)]{codex2024}
+{OpenAI}.
+\newblock Introducing codex [EB/OL].
+\newblock 2025.
+\newblock \url{https://openai.com/index/introducing-codex/}.
+
+\bibitem[{OpenCode Team}(2025)]{opencode2025}
+{OpenCode Team}.
+\newblock Opencode: Open source ai coding assistant [EB/OL].
+\newblock 2025.
+\newblock \url{https://github.com/opencode-ai/opencode}.
+
+\bibitem[Steinberger(2025)]{openclaw2025}
+Steinberger~P.
+\newblock Openclaw [EB/OL].
+\newblock 2025.
+\newblock \url{https://openclaw.dev/}.
+
+\bibitem[{Google}(2025)]{gemini_cli2024}
+{Google}.
+\newblock Gemini cli [EB/OL].
+\newblock 2025.
+\newblock \url{https://github.com/google-gemini/gemini-cli}.
+
+\bibitem[{Qwen Team}(2025)]{qwen_code2025}
+{Qwen Team}.
+\newblock Qwen code [EB/OL].
+\newblock 2025.
+\newblock \url{https://github.com/QwenLM/qwen-code}.
+
+\bibitem[{Anthropic}(2025{\natexlab{a}})]{claudecode2024}
+{Anthropic}.
+\newblock Claude code overview [EB/OL].
+\newblock 2025.
+\newblock \url{https://docs.anthropic.com/en/docs/claude-code/overview}.
+
+\bibitem[Pearl(2009)]{Pearl2009Causal}
+Pearl~J.
+\newblock Causality: Models, reasoning and inference [M].
+\newblock Cambridge University Press, 2009.
+
+\bibitem[Spirtes {\bibetal}(2001)Spirtes, Glymour, and
+  Scheines]{Spirtes2000Causation}
+Spirtes~P, Glymour~C, Scheines~R.
+\newblock Causation, prediction, and search [M].
+\newblock MIT Press, 2001.
+
+\bibitem[Pham {\bibetal}(2024{\natexlab{a}})Pham, Ha, and
+  Zhang]{pham2024causalmicroservicesurvey}
+Pham~L, Ha~H, Zhang~H.
+\newblock Root cause analysis for microservice system based on causal
+  inference: How far are we? [J].
+\newblock arXiv preprint arXiv:2408.13729, 2024.
+
+\bibitem[Wang {\bibetal}(2018)Wang, Xu, Ma, Lin, Pan, Wang, and
+  Chen]{Wang2018Cloudranger}
+Wang~P, Xu~J, Ma~M, et~al.
+\newblock Cloudranger: Root cause identification for cloud native systems
+  [C/OL]//\allowbreak
+2018 18th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing
+  (CCGRID).
+\newblock 2018: 492-502.
+\newblock DOI: \doi{10.1109/CCGRID.2018.00076}.
+
+\bibitem[Ma {\bibetal}(2019)Ma, Lin, Pan, and Wang]{Ma2019Ms-rank}
+Ma~M, Lin~W, Pan~D, et~al.
+\newblock Ms-rank: Multi-metric and self-adaptive root cause diagnosis for
+  microservice applications [C/OL]//\allowbreak
+2019 IEEE International Conference on Web Services (ICWS).
+\newblock 2019: 60-67.
+\newblock DOI: \doi{10.1109/ICWS.2019.00022}.
+
+\bibitem[Wu {\bibetal}(2021)Wu, Tordsson, Bogatinovski, Elmroth, and
+  Kao]{Wu2021Microdiag}
+Wu~L, Tordsson~J, Bogatinovski~J, et~al.
+\newblock Microdiag: Fine-grained performance diagnosis for microservice
+  systems [C/OL]//\allowbreak
+2021 IEEE/ACM International Workshop on Cloud Intelligence (CloudIntelligence).
+\newblock 2021: 31-36.
+\newblock DOI: \doi{10.1109/CLOUDINTELLIGENCE52565.2021.00015}.
+
+\bibitem[Ma {\bibetal}(2022)Ma, Lin, Pan, and Wang]{Ma2021Servicerank}
+Ma~M, Lin~W, Pan~D, et~al.
+\newblock Servicerank: Root cause identification of anomaly in large-scale
+  microservice architectures [J/OL].
+\newblock IEEE Transactions on Dependable and Secure Computing, 2022,
+  19\penalty0 (5): 3087-3100.
+\newblock DOI: \doi{10.1109/TDSC.2021.3083671}.
+
+\bibitem[Wu {\bibetal}(2020)Wu, Tordsson, Elmroth, and Kao]{wu2020microrca}
+Wu~L, Tordsson~J, Elmroth~E, et~al.
+\newblock Microrca: Root cause localization of performance issues in
+  microservices [C/OL]//\allowbreak
+IEEE/IFIP Network Operations and Management Symposium (NOMS).
+\newblock 2020: 1-9.
+\newblock DOI: \doi{10.1109/NOMS47738.2020.9110353}.
+
+\bibitem[Page {\bibetal}(1999)Page, Brin, Motwani, and
+  Winograd]{pagerank-page1999}
+Page~L, Brin~S, Motwani~R, et~al.
+\newblock The pagerank citation ranking: Bringing order to the web: 1999-66
+  [R].
+\newblock Stanford InfoLab, 1999.
+
+\bibitem[Wang {\bibetal}(2023)Wang, Chen, Ni, Tong, Wang, Fu, and
+  Chen]{Wang2023Interdependent}
+Wang~D, Chen~Z, Ni~J, et~al.
+\newblock Interdependent causal networks for root cause localization [J/OL].
+\newblock Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery
+  and Data Mining, 2023: 2949-2958.
+\newblock DOI: \doi{10.1145/3580305.3599849}.
+
+\bibitem[Li {\bibetal}(2022)Li, Li, Yin, Nie, Zhang, Sui, and
+  Pei]{Li2022Causal}
+Li~M, Li~Z, Yin~K, et~al.
+\newblock Causal inference-based root cause analysis for online service systems
+  with intervention recognition [J/OL].
+\newblock Proceedings of the 28th ACM SIGKDD Conference on Knowledge Discovery
+  and Data Mining, 2022: 3230-3240.
+\newblock DOI: \doi{10.1145/3534678.3539041}.
+
+\bibitem[Han {\bibetal}(2023)Han, Yuan, and Trabelsi]{loggpt}
+Han~X, Yuan~S, Trabelsi~M.
+\newblock Loggpt: Log anomaly detection via gpt [J].
+\newblock arXiv preprint arXiv:2309.14482, 2023.
+
+\bibitem[Landauer {\bibetal}(2023)Landauer, Onder, Skopik, and
+  Wurzenberger]{deep-learning-log-survey}
+Landauer~M, Onder~S, Skopik~F, et~al.
+\newblock Deep learning for anomaly detection in log data: A survey [J/OL].
+\newblock Machine Learning with Applications, 2023, 12: 100470.
+\newblock DOI: \doi{10.1016/j.mlwa.2023.100470}.
+
+\bibitem[Pham {\bibetal}(2024{\natexlab{b}})Pham, Ha, and Zhang]{baro-rca}
+Pham~L, Ha~H, Zhang~H.
+\newblock Baro: Robust root cause analysis for microservices via multivariate
+  bayesian online change point detection [J].
+\newblock arXiv preprint arXiv:2405.09330, 2024.
+
+\bibitem[Gao {\bibetal}(2020)Gao, Song, Wen, Wang, Sun, and Xu]{robusttad}
+Gao~J, Song~X, Wen~Q, et~al.
+\newblock Robusttad: Robust time series anomaly detection via decomposition and
+  convolutional neural networks [J].
+\newblock arXiv preprint arXiv:2002.09545, 2020.
+
+\bibitem[Yang {\bibetal}(2023)Yang, Zhang, Zhou, Wen, and Sun]{dcdetector}
+Yang~Y, Zhang~C, Zhou~T, et~al.
+\newblock Dcdetector: Dual attention contrastive representation learning for
+  time series anomaly detection [J].
+\newblock arXiv preprint arXiv:2306.10347, 2023.
+
+\bibitem[Akmeemana {\bibetal}(2025)Akmeemana, Attanayake, Faiz, and
+  Wickramanayake]{gal-mad}
+Akmeemana~L, Attanayake~C, Faiz~H, et~al.
+\newblock Gal-mad: Towards explainable anomaly detection in microservice
+  applications using graph attention networks [J].
+\newblock arXiv preprint arXiv:2504.00058, 2025.
+
+\bibitem[Zhang {\bibetal}(2023{\natexlab{a}})Zhang, Jin, Lin, Sun, Zhang, Xia,
+  Li, Zhong, Ma, Jin, Zhang, Zhu, and Pei]{zhang2023robust}
+Zhang~S, Jin~P, Lin~Z, et~al.
+\newblock Robust failure diagnosis of microservice system through multimodal
+  data [J/OL].
+\newblock IEEE Transactions on Services Computing, 2023.
+\newblock DOI: \doi{10.1109/TSC.2023.3290018}.
+
+\bibitem[Zhao {\bibetal}(2023)Zhao, Ma, Zhong, Zhang, Tan, Xiong, Yu, Feng,
+  Sun, Zhang, Pei, Lin, and Zhang]{anofusion}
+Zhao~C, Ma~M, Zhong~Z, et~al.
+\newblock Robust multimodal failure detection for microservice systems
+  [C/OL]//\allowbreak
+Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data
+  Mining.
+\newblock 2023: 3140-3151.
+\newblock \url{https://doi.org/10.1145/3580305.3599801}.
+
+\bibitem[Zhao {\bibetal}(2024)Zhao, Wang, Zhang, Shen, Dong, Lei, Ma, Xu, Ding,
+  and Yang]{chase-zhao2024}
+Zhao~Z, Wang~Z, Zhang~T, et~al.
+\newblock Chase: A causal hypergraph based framework for root cause analysis in
+  multimodal microservice systems [J].
+\newblock arXiv preprint arXiv:2406.19711, 2024.
+
+\bibitem[Xie {\bibetal}(2024{\natexlab{a}})Xie, Wang, He, Wang, Zhao, Zhang,
+  and Li]{tvdiag}
+Xie~S, Wang~J, He~H, et~al.
+\newblock Tvdiag: A task-oriented and view-invariant failure diagnosis
+  framework with multimodal data [J].
+\newblock arXiv preprint arXiv:2407.19711, 2024.
+
+\bibitem[Zhang {\bibetal}(2025{\natexlab{a}})Zhang, Fang, Yang, Cheng, Tang,
+  and He]{dynacausal}
+Zhang~S, Fang~A, Yang~Y, et~al.
+\newblock Dynacausal: Dynamic causality-aware root cause analysis for
+  distributed microservices [J].
+\newblock arXiv preprint arXiv:2510.22613, 2025.
+
+\bibitem[Sun {\bibetal}(2024{\natexlab{a}})Sun, Shi, Mao, Ma, Xia, Zhang, and
+  Pei]{sun2024art}
+Sun~Y, Shi~B, Mao~M, et~al.
+\newblock Art: A unified unsupervised framework for incident management in
+  microservice systems [C/OL]//\allowbreak
+Proceedings of the 39th IEEE/ACM International Conference on Automated Software
+  Engineering (ASE '24).
+\newblock 2024{\natexlab{a}}: 2250-2262.
+\newblock \url{https://doi.org/10.1145/3691620.3695495}.
+
+\bibitem[Ahmed {\bibetal}(2023)Ahmed, Ghosh, Bansal, Zimmermann, Zhang, and
+  Rajmohan]{ahmed2023recommending}
+Ahmed~T, Ghosh~S, Bansal~C, et~al.
+\newblock Recommending root-cause and mitigation steps for cloud incidents
+  using large language models [J].
+\newblock arXiv preprint arXiv:2301.03797, 2023.
+
+\bibitem[Zhang {\bibetal}(2024{\natexlab{a}})Zhang, Ghosh, Bansal, Wang, Ma,
+  Kang, and Rajmohan]{zhang2024gpt4iclrca}
+Zhang~X, Ghosh~S, Bansal~C, et~al.
+\newblock Automated root causing of cloud incidents using in-context learning
+  with gpt-4 [J].
+\newblock arXiv preprint arXiv:2401.13810, 2024.
+
+\bibitem[Zhang {\bibetal}(2023{\natexlab{b}})Zhang, Zhang, Bansal, Las-Casas,
+  Fonseca, and Rajmohan]{zhang2023pacelm}
+Zhang~D, Zhang~X, Bansal~C, et~al.
+\newblock Pace-lm: Prompting and augmentation for calibrated confidence
+  estimation with gpt-4 in cloud incident root cause analysis [J].
+\newblock arXiv preprint arXiv:2309.05833, 2023.
+
+\bibitem[Goel {\bibetal}(2024)Goel, Husain, Singh, Ghosh, Parayil, Bansal,
+  Zhang, and Rajmohan]{goel2024xlifecycle}
+Goel~D, Husain~F, Singh~A, et~al.
+\newblock X-lifecycle learning for cloud incident management using llms [J].
+\newblock arXiv preprint arXiv:2404.03662, 2024.
+
+\bibitem[Goel {\bibetal}(2025)Goel, Magazine, Ghosh, Nambi, Deshpande, Zhang,
+  Bansal, and Rajmohan]{goel2025earco}
+Goel~D, Magazine~R, Ghosh~S, et~al.
+\newblock earco: Efficient automated root cause analysis with prompt
+  optimization [J].
+\newblock arXiv preprint arXiv:2504.11505, 2025.
+
+\bibitem[Chen {\bibetal}(2023)Chen, Xie, Ma, Kang, Gao, Shi, Cao, Gao, Fan,
+  Wen, Zeng, Ghosh, Zhang, Zhang, Lin, Rajmohan, Zhang, and
+  Xu]{chen2024rcacopilot}
+Chen~Y, Xie~H, Ma~M, et~al.
+\newblock Automatic root cause analysis via large language models for cloud
+  incidents [J].
+\newblock arXiv preprint arXiv:2305.15778, 2023.
+
+\bibitem[Jiang {\bibetal}(2024)Jiang, Zhang, He, Yang, Ma, Qin, Kang, Dang,
+  Rajmohan, Lin, and Zhang]{xpert-jiang2024}
+Jiang~Y, Zhang~C, He~S, et~al.
+\newblock Xpert: Empowering incident management with query recommendations via
+  large language models [C]//\allowbreak
+Proceedings of the 46th International Conference on Software Engineering.
+\newblock 2024.
+
+\bibitem[Xie {\bibetal}(2024{\natexlab{b}})Xie, Zheng, Ottens, Zhang,
+  Kozyrakis, and Mace]{xie2024cloud}
+Xie~Z, Zheng~Y, Ottens~L, et~al.
+\newblock Cloud atlas: Efficient fault localization for cloud systems using
+  language models and causal insight [J].
+\newblock arXiv preprint arXiv:2407.08694, 2024.
+
+\bibitem[Schick {\bibetal}(2024)Schick, Dwivedi, Mishra, and
+  Grave]{schick2024toolformer}
+Schick~T, Dwivedi~Y, Mishra~S, et~al.
+\newblock Toolformer: Language models can teach themselves to use tools [J].
+\newblock Transactions of the Association for Computational Linguistics, 2024,
+  12: 335-358.
+
+\bibitem[Qin {\bibetal}(2023)Qin, Liang, Ye, Zeng, Lu, Liu, Chen, Zhang, Liu,
+  Tang, Wu, Zhou, and Bai]{qin2023toolllm}
+Qin~Y, Liang~S, Ye~Y, et~al.
+\newblock Toolllm: Facilitating large language models to master 16000+
+  real-world apis [J].
+\newblock arXiv preprint arXiv:2307.16789, 2023.
+
+\bibitem[Roy {\bibetal}(2024)Roy, Zhang, Bhave, Bansal, Las-Casas, Fonseca, and
+  Rajmohan]{roy2024exploringllmrca}
+Roy~D, Zhang~X, Bhave~R, et~al.
+\newblock Exploring llm-based agents for root cause analysis [J].
+\newblock arXiv preprint arXiv:2403.04123, 2024.
+
+\bibitem[{K8sGPT Authors}(2023)]{k8sgpt2023}
+{K8sGPT Authors}.
+\newblock K8sgpt [EB/OL].
+\newblock 2023.
+\newblock \url{https://github.com/k8sgpt-ai/k8sgpt}.
+
+\bibitem[Xiang {\bibetal}(2025)Xiang, Chen, Zeng, Yin, Liu, Li, and
+  Xu]{xiang2025synergyrca}
+Xiang~Y, Chen~C~P, Zeng~L, et~al.
+\newblock Simplifying root cause analysis in kubernetes with stategraph and llm
+  [J].
+\newblock arXiv preprint arXiv:2506.02490, 2025.
+
+\bibitem[Tang {\bibetal}(2025)Tang, Tang, Pu, Miao, and
+  Wang]{tang2025microrcaagent}
+Tang~P, Tang~S, Pu~H, et~al.
+\newblock Microrca-agent: Microservice root cause analysis method based on
+  large language model agents [J].
+\newblock arXiv preprint arXiv:2509.15635, 2025.
+
+\bibitem[Tian {\bibetal}(2025)Tian, Liu, Chong, Huang, and
+  Jacobsen]{tian2025gala}
+Tian~Y, Liu~Y, Chong~Z, et~al.
+\newblock Gala: Can graph-augmented large language model agentic workflows
+  elevate root cause analysis? [J].
+\newblock arXiv preprint arXiv:2508.12472, 2025.
+
+\bibitem[Shen {\bibetal}(2024)Shen, Li, Chen, Yan, Quan, Chen, Zhang, and
+  Huang]{small-llm-agents}
+Shen~W, Li~C, Chen~H, et~al.
+\newblock Small llms are weak tool learners: A multi-llm agent [J].
+\newblock arXiv preprint arXiv:2401.07324, 2024.
+
+\bibitem[Zhang {\bibetal}(2024{\natexlab{b}})Zhang, Guo, Yang, Tian, Zhang,
+  Yan, Li, Li, Shi, Zheng, and Zhang]{zhang2024mabc}
+Zhang~W, Guo~H, Yang~J, et~al.
+\newblock mabc: Multi-agent blockchain-inspired collaboration for root cause
+  analysis in micro-services architecture [C/OL]//\allowbreak
+Findings of the Association for Computational Linguistics: EMNLP 2024.
+\newblock 2024{\natexlab{b}}: 4017-4033.
+\newblock DOI: \doi{10.18653/v1/2024.findings-emnlp.232}.
+
+\bibitem[An {\bibetal}(2024)An, Yang, Lu, Li, Ren, Huang, Wang, Zhao, Kang,
+  Ding, Lin, Rajmohan, Zhang, and Zhang]{an2024nissist}
+An~K, Yang~F, Lu~J, et~al.
+\newblock Nissist: An incident mitigation copilot based on troubleshooting
+  guides [J].
+\newblock arXiv preprint arXiv:2402.17531, 2024.
+
+\bibitem[Ren(2025)]{ren2025mctsfaultlocalization}
+Ren~R.
+\newblock The multi-agent fault localization system based on monte carlo tree
+  search approach [J].
+\newblock arXiv preprint arXiv:2507.22800, 2025.
+
+\bibitem[Zhang {\bibetal}(2025{\natexlab{b}})Zhang, Jia, Wang, Hong, Duan, He,
+  and Li]{zhang2025rclagent}
+Zhang~L, Jia~T, Wang~K, et~al.
+\newblock Adaptive root cause localization for microservice systems with
+  multi-agent recursion-of-thought [J].
+\newblock arXiv preprint arXiv:2508.20370, 2025.
+
+\bibitem[Pei {\bibetal}(2025)Pei, Wang, Liu, Li, Liu, He, Kang, Zhang, Chen,
+  Li, Xie, and Pei]{pei2025flowofaction}
+Pei~C, Wang~Z, Liu~F, et~al.
+\newblock Flow-of-action: Sop enhanced llm-based multi-agent system for root
+  cause analysis [C/OL]//\allowbreak
+Companion Proceedings of the ACM on Web Conference 2025.
+\newblock 2025: 422-431.
+\newblock \url{https://doi.org/10.1145/3701716.3715225}.
+
+\bibitem[Demarne {\bibetal}(2024)Demarne, Cilimdzic, Falkowski, Johnson,
+  Gramling, Kuang, Hou, Aryan, Subramaniam, Lee, Mejia, Liu, and
+  Vermareddy]{demarne2024arcas}
+Demarne~M, Cilimdzic~M, Falkowski~T, et~al.
+\newblock Automated root cause analysis system for complex data products [J].
+\newblock arXiv preprint arXiv:2412.15374, 2024.
+
+\bibitem[Mao {\bibetal}(2025)Mao, Li, Gao, Peng, He, Zhang, Qin, Khalid, Lin,
+  Rajmohan, Lanka, and Zhang]{mao2025agentictsgautomation}
+Mao~J, Li~L, Gao~Y, et~al.
+\newblock Agentic troubleshooting guide automation for incident management [J].
+\newblock arXiv preprint arXiv:2510.10074, 2025.
+
+\bibitem[Yan {\bibetal}(2025)Yan, Luo, and Huang]{fastreject2025}
+Yan~Q, Luo~Y, Huang~H.
+\newblock Fastreject: A multi-modal root cause analysis framework with
+  online-offline knowledge evolution [EB/OL].
+\newblock Tencent WXG Technical Architecture Department, 2025.
+\newblock \url{https://www.aiops.cn/wp-content/uploads/2025/09/FastReject.pdf}.
+
+\bibitem[Kim {\bibetal}(2026)Kim, Park, Yun, and Lee]{kim2026agentfailurerca}
+Kim~T, Park~W, Yun~H, et~al.
+\newblock Why do ai agents systematically fail at cloud root cause analysis?
+  [J].
+\newblock arXiv preprint arXiv:2602.09937, 2026.
+
+\bibitem[Anandayuvaraj {\bibetal}(2024)Anandayuvaraj, Campbell, Tewari, and
+  Davis]{fail-anandayuvaraj2024}
+Anandayuvaraj~D, Campbell~M, Tewari~A, et~al.
+\newblock Fail: Analyzing software failures from the news using llms
+  [C/OL]//\allowbreak
+Proceedings of the 39th IEEE/ACM International Conference on Automated Software
+  Engineering.
+\newblock 2024.
+\newblock DOI: \doi{10.1145/3691620.3695022}.
+
+\bibitem[He {\bibetal}(2018)He, Zhu, Xu, Zheng, and Lyu]{drain-he2018}
+He~P, Zhu~J, Xu~P, et~al.
+\newblock A directed acyclic graph approach to online log parsing [J].
+\newblock IEEE Transactions on Software Engineering, 2018, 44\penalty0 (12):
+  1190-1211.
+
+\bibitem[Pedregosa {\bibetal}(2011)Pedregosa, Varoquaux, Gramfort, Michel,
+  Thirion, Grisel, Blondel, M{\"u}ller, Nothman, Louppe, Prettenhofer, Weiss,
+  Dubourg, Vanderplas, Passos, Cournapeau, Brucher, Perrot, and
+  Duchesnay]{scikit-learn}
+Pedregosa~F, Varoquaux~G, Gramfort~A, et~al.
+\newblock Scikit-learn: Machine learning in python [J].
+\newblock Journal of Machine Learning Research, 2011, 12: 2825-2830.
+
+\bibitem[Virtanen {\bibetal}(2020)Virtanen, Gommers, Oliphant, Haberland,
+  Reddy, Cournapeau, Burovski, Peterson, Weckesser, Bright, van~der Walt,
+  Brett, Wilson, Millman, Mayorov, Nelson, Jones, Kern, Larson, Carey, Polat,
+  Feng, Moore, VanderPlas, Laxalde, Perktold, Cimrman, Henriksen, Quintero,
+  Harris, Archibald, Ribeiro, and van Mulbregt]{scipy}
+Virtanen~P, Gommers~R, Oliphant~T~E, et~al.
+\newblock Scipy 1.0: Fundamental algorithms for scientific computing in python
+  [J].
+\newblock Nature Methods, 2020, 17: 261-272.
+
+\bibitem[Sun {\bibetal}(2024{\natexlab{b}})Sun, Xu, Tang, Wang, Lin, Gong, Ni,
+  Shum, and Guo]{sun2024thinkongraph}
+Sun~J, Xu~C, Tang~L, et~al.
+\newblock Think-on-graph: Deep and responsible reasoning of large language
+  model on knowledge graph [C/OL]//\allowbreak
+The Twelfth International Conference on Learning Representations, {ICLR} 2024,
+  Vienna, Austria, May 7--11, 2024.
+\newblock OpenReview.net, 2024{\natexlab{b}}.
+\newblock \url{https://openreview.net/forum?id=nnVO1PvbTv}.
+
+\bibitem[{Anthropic}(2025{\natexlab{b}})]{claudecode_skills}
+{Anthropic}.
+\newblock Anthropic skills for claude code [EB/OL].
+\newblock 2025.
+\newblock \url{https://github.com/anthropics/skills}.
+
+\bibitem[{Anthropic}(2024{\natexlab{a}})]{mcp}
+{Anthropic}.
+\newblock Model context protocol (mcp) [EB/OL].
+\newblock 2024.
+\newblock \url{https://modelcontextprotocol.io/}.
+
+\bibitem[Luo {\bibetal}(2025)Luo, Shen, Yang, Zhao, Jwalapuram, Saha, Savarese,
+  Xiong, and Li]{luo2025mcpuniverse}
+Luo~Z, Shen~Z, Yang~W, et~al.
+\newblock Mcp-universe: Benchmarking large language models with real-world
+  model context protocol servers [J].
+\newblock arXiv preprint arXiv:2508.14704, 2025.
+
+\bibitem[{Anthropic}(2024{\natexlab{b}})]{claudecode-subagent}
+{Anthropic}.
+\newblock Subagents --- claude code documentation [EB/OL].
+\newblock 2024.
+\newblock \url{https://docs.anthropic.com/en/docs/claude-code/sub-agents}.
+
+\bibitem[Jayanti {\bibetal}(2026)Jayanti and Han]{jayanti2026camcp}
+Jayanti~M~A, Han~X~Y.
+\newblock Enhancing model context protocol (mcp) with context-aware server
+  collaboration [J].
+\newblock arXiv preprint arXiv:2601.11595, 2026.
+
+\bibitem[Koc {\bibetal}(2025)Koc, Verre, Blank, and Morgan]{koc2025mcpide}
+Koc~V, Verre~J, Blank~D, et~al.
+\newblock Mind the metrics: Patterns for telemetry-aware in-ide ai application
+  development using the model context protocol (mcp) [J].
+\newblock arXiv preprint arXiv:2506.11019, 2025.
+
+\bibitem[MiniMax(2025)]{minimax2025}
+MiniMax.
+\newblock Minimax m2.1 [EB/OL].
+\newblock 2025.
+\newblock \url{https://www.minimax.io/news/minimax-m21}.
+
+\bibitem[Zhang {\bibetal}(2025{\natexlab{c}})Zhang, Li, Long, Zhang, Lin, Yang,
+  Xie, Yang, Liu, Lin, Huang, and Zhou]{qwen3embedding2025}
+Zhang~Y, Li~M, Long~D, et~al.
+\newblock Qwen3 embedding: Advancing text embedding and reranking through
+  foundation models [J/OL].
+\newblock arXiv preprint arXiv:2506.05176, 2025.
+\newblock \url{https://arxiv.org/abs/2506.05176}.
+
+\bibitem[{Microsoft}(2026)]{playwright2026}
+{Microsoft}.
+\newblock Playwright [EB/OL].
+\newblock 2026.
+\newblock \url{https://playwright.dev/}.
+
+\bibitem[{Chroma}(2026)]{chromadb2026}
+{Chroma}.
+\newblock Chroma [EB/OL].
+\newblock 2026.
+\newblock \url{https://github.com/chroma-core/chroma}.
+
+\bibitem[{CCF International AIOps Challenge Organizing
+  Committee}(2025)]{aiops2025challenge}
+{CCF International AIOps Challenge Organizing Committee}.
+\newblock 2025 ccf international aiops challenge [EB/OL].
+\newblock 2025.
+\newblock \url{https://tianchi.aliyun.com/competition/entrance/532387/532387}.
+
+\bibitem[Xu {\bibetal}(2025)Xu, Zhang, Zhong, He, Zhang, Lin, Pei, He, Zhang,
+  and Zhang]{xu2025openrca}
+Xu~J, Zhang~Q, Zhong~Z, et~al.
+\newblock Openrca: Can large language models locate the root cause of software
+  failures? [C/OL]//\allowbreak
+The Thirteenth International Conference on Learning Representations.
+\newblock 2025.
+\newblock \url{https://openreview.net/forum?id=M4qNIzQYpd}.
+
+\end{thebibliography}

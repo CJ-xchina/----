@@ -1,0 +1,69 @@
+\contentsline {chapter}{\numberline {第1章\hspace {.3em}}绪论}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}研究背景}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}问题分析}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}研究工作}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}论文组织}{5}{section.1.4}%
+\contentsline {chapter}{\numberline {第2章\hspace {.3em}}相关技术与研究现状}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}微服务故障诊断概述}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}大语言模型与智能体应用开发框架}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}传统微服务故障诊断方法}{9}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}因果推断方法}{9}{subsection.2.3.1}%
+\contentsline {paragraph}{因果图构建与结构发现}{9}{paragraph*.15}%
+\contentsline {paragraph}{根因回溯与干预分析}{10}{paragraph*.16}%
+\contentsline {subsection}{\numberline {2.3.2}特征学习方法}{10}{subsection.2.3.2}%
+\contentsline {paragraph}{单模态特征学习方法}{10}{paragraph*.17}%
+\contentsline {paragraph}{多模态特征学习方法}{10}{paragraph*.18}%
+\contentsline {section}{\numberline {2.4}大语言模型驱动的根因定位方法}{11}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}大语言模型离线分析}{11}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}工具增强的单智能体}{12}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}多智能体协同诊断}{12}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}知识增强的多智能体协同诊断}{13}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}本章小结}{14}{section.2.5}%
+\contentsline {chapter}{\numberline {第3章\hspace {.3em}}经验驱动的微服务故障根因定位智能体构建方法}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}问题分析}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}传播感知的多模态故障指纹构建方法}{18}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}故障指纹构建方法的设计}{19}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}指标、日志和调用链路的统一表示}{21}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}面向传播特征的多模态特征提取}{22}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}基于特征筛选的故障指纹生成方法}{24}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}面向微服务故障诊断的SOP自动化构建方法}{26}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}SOP构建问题分析与方法设计}{27}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}故障类型先验的SOP执行轨迹生成}{30}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}决策单元提取与权重计算}{34}{subsection.3.3.3}%
+\contentsline {paragraph}{1) 互信息（Mutual Information, MI）}{36}{paragraph*.31}%
+\contentsline {paragraph}{2) 方向因子（Direction Factor, DF）}{36}{paragraph*.32}%
+\contentsline {paragraph}{3) 拓扑距离（Topology Distance, TD）}{36}{paragraph*.33}%
+\contentsline {paragraph}{4) 逃逸有效性（Escape Validity, EV）}{36}{paragraph*.34}%
+\contentsline {subsection}{\numberline {3.3.4}规则智能体的SOP组织方法}{37}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}SOP驱动的多智能体在线故障诊断方法}{40}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}故障指纹匹配与 SOP 召回}{41}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}焦点与感知域约束}{42}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}SOP 驱动的多智能体在线诊断流程}{43}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}在线诊断结果审核与知识库增量更新}{45}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}本章小结}{46}{section.3.5}%
+\contentsline {chapter}{\numberline {第4章\hspace {.3em}}故障诊断智能体平台设计与实现}{47}{chapter.4}%
+\contentsline {section}{\numberline {4.1}系统架构}{47}{section.4.1}%
+\contentsline {section}{\numberline {4.2}系统实现}{49}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}故障指纹构建方法的实现}{49}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}SOP自动化构建方法的实现}{50}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}在线故障诊断方法的实现}{50}{subsection.4.2.3}%
+\contentsline {section}{\numberline {4.3}任务执行与数据管理}{51}{section.4.3}%
+\contentsline {section}{\numberline {4.4}平台界面}{54}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}诊断执行界面}{54}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}工作区界面}{55}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}故障指纹界面}{56}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}本章小结}{56}{section.4.5}%
+\contentsline {chapter}{\numberline {第5章\hspace {.3em}}实验验证与分析}{59}{chapter.5}%
+\contentsline {section}{\numberline {5.1}实验目的}{59}{section.5.1}%
+\contentsline {section}{\numberline {5.2}实验设置}{59}{section.5.2}%
+\contentsline {section}{\numberline {5.3}故障指纹检索性能评估}{61}{section.5.3}%
+\contentsline {section}{\numberline {5.4}SOP 自动化构建有效性评估}{64}{section.5.4}%
+\contentsline {section}{\numberline {5.5}端到端诊断性能评估}{67}{section.5.5}%
+\contentsline {section}{\numberline {5.6}消融实验}{71}{section.5.6}%
+\contentsline {section}{\numberline {5.7}本章小结}{72}{section.5.7}%
+\contentsline {chapter}{\numberline {第6章\hspace {.3em}}总结与展望}{75}{chapter.6}%
+\contentsline {section}{\numberline {6.1}工作总结}{75}{section.6.1}%
+\contentsline {section}{\numberline {6.2}未来展望}{76}{section.6.2}%
+\contentsline {chapter}{参考文献}{77}{section*.62}%
+\contentsline {chapter}{致谢}{83}{chapter*.64}%
+\contentsline {chapter}{作者简历及攻读学位期间发表的学术论文与其他相关学术成果}{85}{chapter*.65}%

@@ -8,9 +8,9 @@
 
 随着云服务规模持续扩大以及软件交付方式不断演进，传统单体应用在扩展性、维护成本和故障隔离等方面的局限逐渐显现，系统架构因此逐步转向按业务能力拆分的微服务架构\cite{microservice-architecture,richardson2018microservices}。在该架构下，应用通常由多个相互协作的服务单元构成，并借助 Kubernetes\cite{kubernetes2024} 等云原生基础设施实现容器化部署、弹性扩缩容和持续迭代。与单体系统相比，微服务系统的运行状态不再集中体现于少数模块内部，而是分散在大量服务实例及其交互过程中。一次用户请求通常需要经过网关、业务服务、缓存、消息中间件和数据库等多个组件才能完成，而服务实例的动态伸缩、版本更替与资源调度又使系统中的调用关系和资源依赖持续变化。在这种运行环境下，局部异常往往难以简单限制在单一组件内部，而可能沿调用链路、共享资源或重试机制向上下游扩散，最终演化为跨服务、跨层级的系统故障。因此，如何在复杂运行现象中准确识别真实故障源，已成为保障云服务稳定运行亟待解决的关键问题\cite{microservice-diagnosis-survey}。
 
-\begin{figure}[H]
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textwidth]{Figures-Src/Chap1-Introduction/multimodal-data/chart.pdf}
+    \includegraphics[width=\textwidth, trim=0 0 110 0, clip]{Figures-Src/Chap1-Introduction/multimodal-data/chart.pdf}
     \bicaption{\enspace 微服务故障诊断多模态数据示意}{\enspace Multimodal Data for Microservice Fault Diagnosis}
     \label{fig:multimodal-data}
 \end{figure}
